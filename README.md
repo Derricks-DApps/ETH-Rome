@@ -26,6 +26,11 @@ Not only can web3 vendors accept Crypto payments now, they can also accept FIAT 
 
   * Purchase
     * Sends funds from the customers wallet to the vendors store shelf
+
+## Contributions
+
+Scaffold-ETH: 
+  * <a href="https://github.com/scaffold-eth/scaffold-eth-2/pull/559">https://github.com/scaffold-eth/scaffold-eth-2/pull/559</a>
     
 
   
