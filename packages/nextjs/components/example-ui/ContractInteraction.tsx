@@ -5,6 +5,7 @@ import { HareIcon } from "./assets/HareIcon";
 import { parseEther } from "viem";
 import { ArrowSmallRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
+import CloudVisonUploader from "~~/pages/CloudVisonUploader";
 
 export const ContractInteraction = () => {
   const [visible, setVisible] = useState(true);
@@ -21,18 +22,18 @@ export const ContractInteraction = () => {
   });
 
   return (
-    <div className="flex bg-base-300 relative pb-10">
-      <DiamondIcon className="absolute top-24" />
-      <CopyIcon className="absolute bottom-0 left-36" />
-      <HareIcon className="absolute right-0 bottom-24" />
+
+<>
+<CloudVisonUploader />
+
       <div className="flex flex-col w-full mx-5 sm:mx-8 2xl:mx-20">
         <div className="flex flex-col mt-6 px-7 py-8 bg-base-200 opacity-80 rounded-2xl shadow-lg border-2 border-primary">
-          <span className="text-4xl sm:text-6xl text-black">Set a Greeting_</span>
+          <span className="text-4xl sm:text-6xl text-black">Add Barcode for this product</span>
 
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-5">
             <input
               type="text"
-              placeholder="Write your greeting here"
+              placeholder="..."
               className="input font-bai-jamjuree w-full px-5 bg-[url('/assets/gradient-bg.png')] bg-[length:100%_100%] border border-primary text-lg sm:text-2xl placeholder-white uppercase"
               onChange={e => setNewGreeting(e.target.value)}
             />
@@ -61,6 +62,6 @@ export const ContractInteraction = () => {
           </div>
         </div>
       </div>
-    </div>
+      </>
   );
 };

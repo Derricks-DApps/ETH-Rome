@@ -34,3 +34,12 @@ p {
 .logo{
   font-size: 35px;
 }
+
+.get-barcode{
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    background-color: skyblue;
+}

@@ -11,9 +11,13 @@ Lightwieght POS that brings the speed and ease of UPC bar codes to web3. Platfor
 
 ## Administrative (ENS)
 
+https://app.ens.domains/mensola.eth
+
+<img src="./assets/ens.png" hieght="150" width="150"/>
+
 Vendors can add the hours and locations for their <a href="https://tools.ens.domains/setprmanager">Shop</a> with ENS Text Records so they can market publicly to everyone on chain.
 
-The Governing smartcontract of the platform can add and remove Shop smartcontracts <a href="https://app.ens.domains/ethrometesting.eth">ethrometesting.eth</a>.
+The Governing smartcontract of the platform can add and remove Shop smartcontracts <a href="https://app.ens.domains/mensola.eth">ethrometesting.eth</a>.
 
 ## Transactions (Peanut protocol)
 

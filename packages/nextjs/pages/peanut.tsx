@@ -3,6 +3,10 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
+import peanut from "@squirrel-labs/peanut-sdk";
+
+// To test if peanut is installed
+console.log(peanut.version);
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   const router = useRouter();
@@ -13,15 +17,15 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
       href={href}
       passHref
       className={`${
-        isActive ? "bg-secondary shadow-md get-barcode" : ""
-      } hover:bg-secondary hover:shadow-md focus:!bg-secondary active:!text-neutral py-1.5 px-3 text-sm rounded-full gap-2 grid grid-flow-col get-barcode`}
+        isActive ? "bg-secondary shadow-md" : ""
+      } hover:bg-secondary hover:shadow-md focus:!bg-secondary active:!text-neutral py-1.5 px-3 text-sm rounded-full gap-2 grid grid-flow-col`}
     >
       {children}
     </Link>
   );
 };
 
-const Home: NextPage = () => {
+const Peanut: NextPage = () => {
   return (
     <>
       <MetaHeader />
@@ -32,17 +36,19 @@ const Home: NextPage = () => {
           </h1>
 
           <h2>
-          Governance and POS service for Barcodes as an alternative to GS1. Mensola means shelf in English and it gives vendors a global shelf to sell their products on fairly.          </h2>
+          Governance and POS service for Barcodes. Transparent, affordable, and widely available
+          </h2>
         </div>
 
-       
+        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
+         {/* Add content */}
          <NavLink href="/example-ui">
-          Get a Barcode
+          Try it
         </NavLink>
-        
+        </div>
       </div>
     </>
   );
 };
 
-export default Home;
+export default Peanut;
